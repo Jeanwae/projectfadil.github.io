@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Quiz Logaritma</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/quiz.css" />
+        <link rel="icon" type="image/png" href="https://s7.krakenfiles.com/uploads/14-05-2025/zqYKHR3eG3/image.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark inhe p-3 shadow" data-aos="fade-down">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Matematika</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="quiz.html">Quiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="jadwal.html">Jadwal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontak.html">Masukan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="marquee-bg text-center" data-aos="fade-down">
+            <marquee behavior="scroll" direction="left">🎉 Selamat Datang di Media Pembelajaran Matematika - Belajar Logaritma Lebih Mudah dan Menyenangkan!</marquee>
+        </div>
+
+        <div class="container mt-5">
+            <h2 class="text-center text-success mb-3" data-aos="fade-down" data-aos-duration="1000">Quiz Interaktif Logaritma</h2>
+            <p class="text-center" data-aos="fade-down" data-aos-duration="200">Jawablah pertanyaan berikut dan lihat hasilnya langsung!</p>
+
+            <div class="card quiz-card p-4 mb-4 shadow-sm" data-aos="fade-up">
+                <h5><i class="bi bi-question-circle-fill text-success"></i> 1. Berapakah nilai log₂(16)?</h5>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q1" value="2" class="form-check-input" id="q1a" onclick="showFeedback('q1', this.value)" />
+                    <label class="form-check-label" for="q1a">2</label>
+                </div>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q1" value="3" class="form-check-input" id="q1b" onclick="showFeedback('q1', this.value)" />
+                    <label class="form-check-label" for="q1b">3</label>
+                </div>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q1" value="4" class="form-check-input" id="q1c" onclick="showFeedback('q1', this.value)" />
+                    <label class="form-check-label" for="q1c">4</label>
+                </div>
+                <div id="feedback-q1" class="mt-2 small"></div>
+            </div>
+
+            <div class="card quiz-card p-4 mb-4 shadow-sm" data-aos="fade-up">
+                <h5><i class="bi bi-question-circle-fill text-success"></i> 2. Jika log₁₀(1000) = x, maka nilai x adalah?</h5>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q2" value="2" class="form-check-input" id="q2a" onclick="showFeedback('q2', this.value)" />
+                    <label class="form-check-label" for="q2a">2</label>
+                </div>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q2" value="3" class="form-check-input" id="q2b" onclick="showFeedback('q2', this.value)" />
+                    <label class="form-check-label" for="q2b">3</label>
+                </div>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q2" value="4" class="form-check-input" id="q2c" onclick="showFeedback('q2', this.value)" />
+                    <label class="form-check-label" for="q2c">4</label>
+                </div>
+                <div id="feedback-q2" class="mt-2 small"></div>
+            </div>
+
+            <div class="card quiz-card p-4 mb-4 shadow-sm" data-aos="fade-up">
+                <h5><i class="bi bi-question-circle-fill text-success"></i> 3. Hitung nilai log₃(729)</h5>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q3" value="5" class="form-check-input" id="q3a" onclick="showFeedback('q3', this.value)" />
+                    <label class="form-check-label" for="q3a">5</label>
+                </div>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q3" value="6" class="form-check-input" id="q3b" onclick="showFeedback('q3', this.value)" />
+                    <label class="form-check-label" for="q3b">6</label>
+                </div>
+                <div class="form-check hover-effect">
+                    <input type="radio" name="q3" value="7" class="form-check-input" id="q3c" onclick="showFeedback('q3', this.value)" />
+                    <label class="form-check-label" for="q3c">7</label>
+                </div>
+                <div id="feedback-q3" class="mt-2 small"></div>
+            </div>
+
+            <button class="btn btn-success btn-quiz w-100 mt-3" onclick="checkAnswers()" data-aos="zoom-in">Lihat Skor Akhir</button>
+
+            <div id="result" class="mt-4 text-center"></div>
+            <div class="text-center mt-3 d-none" id="retryBtn">
+                <button class="btn btn-success" onclick="location.reload()">Coba Lagi</button>
+            </div>
+        </div>
+
+        <footer class="text-white inhe py-4 mt-4 mb-0" data-aos="fade-up">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-4" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <h5 class="fw-bold text-uppercase mb-3">Navigasi</h5>
+                        <ul class="list-inline mb-0 d-flex flex-wrap gap-3">
+                            <li class="list-inline-item"><a href="index.html" class="text-light text-decoration-none">Beranda</a></li>
+                            <li class="list-inline-item"><a href="materi.html" class="text-light text-decoration-none">Materi</a></li>
+                            <li class="list-inline-item"><a href="quiz.html" class="text-light text-decoration-none">Quiz</a></li>
+                            <li class="list-inline-item"><a href="jadwal.html" class="text-light text-decoration-none">Jadwal</a></li>
+                            <li class="list-inline-item"><a href="feedback.html" class="text-light text-decoration-none">Masukan</a></li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h5 class="fw-bold text-uppercase mb-3">Kontak</h5>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+6281234567859" class="text-light text-decoration-none">+62 812 3456 5659</a></p>
+                        <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i><span class="text-light">mariani@smkn2bjm.sch.id</span></p>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Jl. H. Hasan Basri, Banjarmasin</p>
+                        <div class="mt-2" data-aos="fade-up">
+                            <a href="#" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-light me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-light fs-5"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-light mt-4" />
+                <div class="text-center" data-aos="fade-in" data-aos-delay="400">
+                    <p class="mb-0">&copy; 2025 <strong>Mariani</strong>. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+                duration: 700,
+                offset: 100,
+            });
+
+            const correctAnswers = { q1: "4", q2: "3", q3: "6" };
+
+            function showFeedback(questionId, value) {
+                const feedbackEl = document.getElementById("feedback-" + questionId);
+                if (value === correctAnswers[questionId]) {
+                    feedbackEl.innerHTML = "✅ Jawaban benar! Hebat!";
+                    feedbackEl.classList.remove("text-danger");
+                    feedbackEl.classList.add("text-success");
+                } else {
+                    feedbackEl.innerHTML = "❌ Belum tepat, coba lagi ya.";
+                    feedbackEl.classList.remove("text-success");
+                    feedbackEl.classList.add("text-danger");
+                }
+            }
+
+            function checkAnswers() {
+                let correct = 0;
+                for (let key in correctAnswers) {
+                    const selected = document.querySelector(`input[name="${key}"]:checked`);
+                    if (selected && selected.value === correctAnswers[key]) correct++;
+                }
+
+                const resultBox = document.getElementById("result");
+                const retryBtn = document.getElementById("retryBtn");
+
+                resultBox.innerHTML = `
+                <div class="result-box bg-white border border-success text-success shadow">
+                    <strong>🎉 Kamu menjawab ${correct} dari 3 soal dengan benar!</strong><br>
+                    ${correct === 3 ? "Hebat! Semua benar 👏" : correct === 2 ? "Bagus! Tinggal sedikit lagi 💪" : "Ayo belajar lagi 😄"}
+                </div>
+            `;
+                retryBtn.classList.remove("d-none");
+            }
+        </script>
+    </body>
+</html>

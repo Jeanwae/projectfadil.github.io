@@ -1,0 +1,45 @@
+.hero {
+    background: linear-gradient(rgba(0, 128, 0, 0.6), rgba(0, 100, 0, 0.8)), url("https://source.unsplash.com/1600x600/?math,education");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 15px;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+
+.marquee-bg {
+    background: rgb(63, 145, 67);
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
+
+.inhe {
+    background-color: rgb(63, 145, 67);
+}

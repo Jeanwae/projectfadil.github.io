@@ -1,0 +1,35 @@
+.marquee-bg {
+    background: rgb(63, 145, 67);
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.tinggi-border {
+    height: 130px;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
+
+.card {
+    height: 225px;
+}
+
+.inhe {
+    background-color: rgb(63, 145, 67);
+}
+
+.search-input {
+    height: 120px;
+}

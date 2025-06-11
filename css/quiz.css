@@ -1,0 +1,82 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.marquee-bg {
+    background: rgb(63, 145, 67);
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.quiz-card {
+    background-color: #f8f9fa;
+    border-left: 5px solid rgb(63, 145, 67);
+    border-radius: 10px;
+}
+
+.hover-effect:hover {
+    background-color: #e2f0e9;
+    transition: 0.3s ease-in-out;
+
+    width: 35px;
+    border-radius: 6px;
+}
+
+.btn-quiz {
+    font-size: 1.1rem;
+    padding: 12px;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.hover-effect:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+    background-color: #f0fff4;
+    border-radius: 8px;
+}
+
+.result-box {
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    animation: zoomFade 0.5s ease-in-out;
+}
+
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#feedback-q1,
+#feedback-q2,
+#feedback-q3 {
+    transition: all 0.3s ease-in-out;
+    min-height: 24px;
+}
+
+.inhe {
+    background-color: rgb(63, 145, 67);
+}
