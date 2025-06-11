@@ -8,10 +8,6 @@
     position: relative;
 }
 
-.tinggi-border {
-    height: 200px;
-}
-
 .hover-opacity:hover {
     opacity: 0.8;
     transition: 0.3s;
@@ -23,7 +19,7 @@ footer i:hover {
 }
 
 .card {
-    height: 225px;
+    height: 270px;
 }
 
 .inhe {
